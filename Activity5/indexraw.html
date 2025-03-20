@@ -1,0 +1,13 @@
+<button id="hoverBtn"> Click Me </button>
+<script>
+    let button = document.getElementById("hoverBtn");
+    
+    function handleClick() {
+        button.innerText = "Clicked";
+        button.removeEventListener("click", handleClick)
+        alert("Hello po :)")
+    }
+    button.addEventListener("click", handleClick)
+    
+  
+</script>
